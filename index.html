@@ -1,19 +1,40 @@
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title> Tuan Tran </title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="description" content="CSI443 Website">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Tuan Tran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
     <link href="css/style.css" rel="stylesheet" type="text/css" />  
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
-    <img src="img/profilepicture.jpg" alt="Profile Picture" style="width:50px;height:50px;" />
-    <p>
-    <h2>Tuan Tran </h2> <br />
-    <h3>Phone:</h3> (XXX) XXX-XXXX <br />
-    <h3>Email:</h3> tttran15 at student dot rtc dot edu<br />   
-    <h3>Bio:</h3> Hi, my name is Tuan Tran and I am currently attending Renton Technical College to get my Bachelor Degree in software development. I am currently a full-time employee and a part time student. I plan on getting a job relating to my degree once I graduate.  What I am excited to learn about this class is more CSS and html coding. I have done CSS and Html webpages before, but not really much about making it responsive to different type of platform. 
-    </p>
+    <div class="container-fluid"> 
+        <div class="row">
+            <div id="info" class="col-sm-4">
+            <img id="profilepicture" src="img/profilepicture.jpg" alt="Profile Picture" /> <br />
+                <h2>Tuan Tran </h2> <br />
+                <h3>Phone:</h3> (XXX) XXX-XXXX <br />
+                <h3>Email:</h3> tttran15 at student dot rtc dot edu<br />   
+            </div>
+            <div id="bio" class="col-sm-8">
+                <h3>Biography:</h3> <br />
+                <p>Hi, my name is Tuan Tran and I am currently attending Renton Technical College to get my Bachelor Degree in software development. I am currently a full-time employee and a part time student. I plan on getting a job relating to my degree once I graduate.  What I am excited to learn about this class is more CSS and html coding. I have done CSS and Html webpages before, but not really much about making it responsive to different type of platform. </p>
+            </div>    
+        </div>    
+    </div>
+    
 </body>
 
 </html>
