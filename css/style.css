@@ -7,18 +7,11 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: justify;
-    background-color:aqua;
-    background-size:cover;
-    color: darkblue;
 }
 
-li, a {
-    color: blue;
-    background-color: lavenderblush;
-}
 
-div.ib1{
-    background-color: lavenderblush;
+#ib1{
+    background-color: lavender;
 }
 
 
@@ -35,7 +28,7 @@ a:hover { background: #ffa;}
 a {font-size: large}
 
 p.rating {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 h1,h2,h3,h4,h5,h6 { text-align: left; }
@@ -47,6 +40,5 @@ h3 { font: 100%; font-family:san-serif; display: inline;}
 h4 { font: 100%; font-weight:bold; font-family:san-serif;}
 h5 { font: 100%; font-style:italic; font-family:san-serif;}
 h6 { font: 170%; font-variant:small-caps; font-family:san-serif;}
-
 
         
