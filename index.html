@@ -7,32 +7,188 @@
     <meta name="description" content="CSI443 Website">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Tuan Tran">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />  
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
 </head>
 
 <body>
+
+    <div class="container-fluid">
+        <ul>
+            <li  class="nav"><a class="active" href="#home">Home</a></li>
+            <li  class="nav"><a href="html/webresources.html">Web Resources</a></li>
+            <li  class="nav"><a href="html/assignment3.html">Assignment3</a></li>
+        </ul>
+    </div>
+    
     <div class="container-fluid"> 
-        <div class="row">
-            <div id="info" class="col-sm-4">
+        <div class="row">        
+            <!-- Col 1 Start SM-->
+            <div id="info" class="col-xs-12 col-sm-4 col-md-3">
             <img id="profilepicture" src="img/profilepicture.jpg" alt="Profile Picture" /> <br />
-                <h2>Tuan Tran </h2> <br />
+                <h2> Tuan Tran </h2> <br />
                 <h3>Phone:</h3> (XXX) XXX-XXXX <br />
-                <h3>Email:</h3> tttran15 at student dot rtc dot edu<br />   
+                <h3>Email:</h3> tttran15 at student dot rtc dot edu<br /> <br />
             </div>
-            <div id="bio" class="col-sm-8">
+            
+            <!-- Col 2 Start SM -->
+            <div id="bio" class="col-xs-12 col-sm-8 col-md-9">
                 <h3>Biography:</h3> <br />
                 <p>Hi, my name is Tuan Tran and I am currently attending Renton Technical College to get my Bachelor Degree in software development. I am currently a full-time employee and a part time student. I plan on getting a job relating to my degree once I graduate.  What I am excited to learn about this class is more CSS and html coding. I have done CSS and Html webpages before, but not really much about making it responsive to different type of platform. </p>
             </div>    
-        </div>    
+            
+            <!-- Col 3 Start SM 
+            <div id="landscape" class="col-xs-12 hidden-sm col-md-3 col-lg-4">
+            <h3>Education:</h3>
+            <p> I have a Associate of Science in Computer Engineering </p>
+            <h3>Experience:</h3>
+            <p> In high school I've created 3D Animation and video game with 3D studio Max. I've taken networking class at GreenRiver CC. I've also taken Autocad at GreenRiver. I've experience with html and javascript. I've used Visual Studio, Azure, Powershell. </p>
+            </div>-->
+        </div>
+        
+        <!-- XS and SM View -->
+        <div id="row2" class="row">
+            <div id="mlist" class="col-xs-12 col-sm-6 hidden-md hidden-lg hidden-xl">
+                <h3>Movies:</h3>
+                <ul>
+                    <li> Iron Man (2008)</li>
+                    <li> X-Men Origins: Wolverine (2009)</li>
+                    <li> X-Men: Days of Future Past (2014)</li>
+                    <li> Doctor Strange (2016)</li>
+                    <li>Avengers: Infinity War (2018)</li>
+                </ul>
+            </div>
+            <div id="blist" class="col-xs-12 col-sm-6 hidden-md hidden-lg hidden-xl">
+                <h3>Books:</h3>
+                <ul>
+                    <li>Rich Dad Poor Dad</li>
+                    <li> The 7 Habits of Highly Effective People</li>
+                    <li>How to Win Friends and Influence People</li>
+                    <li>The 4-Hour Workweek</li>
+                    <li>The Intelligent Investor</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- MD and Larger View -->
+        <div class="row">
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <h3>Movies:</h3>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <div class="thumbnail">
+                    <a href="img/movies/IronMan1.jpg" target="_blank">
+                        <img src="img/movies/IronMan1.jpg" alt="Iron Man (2008)">
+                        <div class="caption text-center">
+                            <p>Iron Man (2008)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <div class="thumbnail">
+                    <a href="img/movies/X-MenOriginsWolverine.jpg" target="_blank">
+                        <img src="img/movies/X-MenOriginsWolverine.jpg" alt="X-Men Origins: Wolverine (2009)">
+                        <div class="caption text-center">
+                            <p>X-Men Origins: Wolverine (2009)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <div class="thumbnail">
+                    <a href="img/movies/X-MenDaysOfFuturePast.jpg" target="_blank">
+                        <img src="img/movies/X-MenDaysOfFuturePast.jpg" alt="X-Men: Days of Future Past (2014)">
+                        <div class="caption text-center">
+                            <p>X-Men: Days of Future Past (2014)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <div class="thumbnail">
+                    <a href="img/movies/DoctorStrange.jpg" target="_blank">
+                        <img src="img/movies/DoctorStrange.jpg" alt=" Doctor Strange (2016)">
+                        <div class="caption text-center">
+                            <p> Doctor Strange (2016)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 d-lg-block">
+                <div class="thumbnail">
+                    <a href="img/movies/AvengersInfinityWar.jpg" target="_blank">
+                        <img src="img/movies/AvengersInfinityWar.jpg" alt="Avengers: Infinity War (2018)">
+                        <div class="caption text-center">
+                            <p>Avengers: Infinity War (2018)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <h3>Books:</h3>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <div class="thumbnail">
+                    <a href="img/books/RichDadPoorDad.jpg" target="_blank">
+                        <img src="img/books/RichDadPoorDad.jpg" alt="Rich Dad Poor Dad" style="width:100%">
+                        <div class="caption text-center">
+                            <p>Rich Dad Poor Dad</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <div class="thumbnail">
+                    <a href="img/books/The7HabitsOfHighlyEffectivePeople.jpg" target="_blank">
+                        <img src="img/books/The7HabitsOfHighlyEffectivePeople.jpg" alt="The 7 Habits of Highly Effective People" style="width:100%">
+                        <div class="caption text-center">
+                            <p>The 7 Habits of Highly Effective People</p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <div class="thumbnail">
+                    <a href="img/books/HowToWinFriendsAndInfluencePeople.jpg" target="_blank">
+                        <img src="img/books/HowToWinFriendsAndInfluencePeople.jpg" alt="How to Win Friends and Influence People" style="width:100%">
+                        <div class="caption text-center">
+                            <p>How to Win Friends and Influence People</p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <div class="thumbnail">
+                    <a href="img/books/The4HourWorkweek.jpg" target="_blank">
+                        <img src="img/books/The4HourWorkweek.jpg" alt=" The 4-Hour Workweek" style="width:100%">
+                        <div class="caption text-center">
+                            <p> The 4-Hour Workweek</p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2">
+                <div class="thumbnail">
+                    <a href="img/books/TheIntelligentInvestor.jpg" target="_blank">
+                        <img src="img/books/TheIntelligentInvestor.jpg" alt="The Intelligent Investor" style="width:100%">
+                        <div class="caption text-center">
+                            <p>The Intelligent Investor</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+           
     </div>
     
 </body>
