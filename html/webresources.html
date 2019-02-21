@@ -1,14 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    
     <title> Web Resources </title>
     <meta charset="UTF-8">
     <meta name="author" content="Tuan Tran">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />  
+    <link href="..\css\reset.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="..\css\style.css" rel="stylesheet" type="text/css" />  
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,46 +18,80 @@
 </head>
 
 <body>
-    <div id="ib1" class="container-fluid" style="background-color:lavenderblush">
-    <h1>Web Resources</h1>
-    <ul>
-        <li><p><a href="http://w3schools.com" target="_blank"> W3Schools </a><br />
-        The W3Schools site contains a comprehensive reference of many 
-        web resources. W3Schools is a website for learning about HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, SQL, Bootstrap, Node.js, jQuery, XQuery, AJAX, and XML. It was created in 1998. Its webpages have thousands of code examples and a editor that lets the user try the code and excute it to see what it would look like. </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="https://getbootstrap.com/" target="_blank">GetBootstrap</a><br />      
-        The GetBootstrap site contains documentations, examples of the bootstrap reference. It also has a link to the premade bootstrap themes. It gives you examples of the layout, framework and some custom component. Bootstrap was original release in August of 2011 and have now been updated to version 4.  </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="https://learn.jquery.com/" target="_blank">jQuery</a><br />
-        The jQuery site is a learning site. It has sections you can read about to learn jQuery. It's goal is to provide user with references to all aspects of using jQuery. It has a contributing section where it shows user how to contribute to the site to help other developers because learning how and when to use jQuery is a different process for each and every web developer, depending largely on experience with the primary tools for front-end development.  </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="https://css-tricks.com/" target="_blank">CSS-Trick</a><br />
-        CSS-Tricks is really about building websites and all that entails, mostly from a front-end perspective. It has an article/blog section where users can post an article and others can comment relating to CSS, HTML, and JavaScript. It has videos to teach you about front end development. </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">MDN Web Docs</a><br />
-        The MDN web docs site contains a comprehensive reference of many web resources including html. This links talks about meta element. Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document. Many meta element contains a name and content attribute which specifies the name of the meta and describes the meta content. </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="https://www.tutorialspoint.com/jquery/dom-html.htm" target="_blank">TutorialsPoint</a><br />
-        The TutorialsPoint site is a site created for those tht prefer to learn new skills at their own pace and in the comfort of their own home. Their missing is to deliver simple and easy learning. They has a large file sharing server so users can share files and they have library tutorial videos to learn about your subject.  </p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
-        
-        <li><p><a href="http://www.lynda.com" target="_blank">Lynda</a><br />
-        The Lynda site is an American massive open online course website offering video courses taught by industry experts in software, creative, and business skills. It was founded in 1995 by Lynda Weinman as lynda.com before being acquired by LinkedIn in 2015. In 2016 LinkedIn was acquired by Microsoft. Lynda is a paid site, but it is free if you have a public library card. If you want to get access you should use the link from the public library site and enter your library card.</p>
-        <p class="rating">*Rating 5/5</p>
-        </li>
 
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CSI443</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="webresources.html">Web Resources</a></li>
+            <li><a href="assignment3.html">Assignment3</a></li>
+            <li><a href="midterm.html">Midterm</a></li>
+            <li><a href="review.html">Review</a></li>
+          </ul>
+        </div><!-- /navbar-collapse -->
+      </div><!-- /container-fluid -->
+    </nav>
+    <!-- END Navigation Bar -->
+
+    <div class="container-fluid" id="ib1">
+        <h1>Web Resources</h1>
+        <div class="row">
+        
+            <div class="col-xs-12">
+                <ul>
+                    <li class="altlist"><p><a href="http://w3schools.com" target="_blank"> W3Schools </a><br />
+                    The W3Schools site contains a comprehensive reference of many 
+                    web resources. W3Schools is a website for learning about HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, SQL, Bootstrap, Node.js, jQuery, XQuery, AJAX, and XML. It was created in 1998. Its webpages have thousands of code examples and a editor that lets the user try the code and excute it to see what it would look like. </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li class="altlist"><p><a href="https://getbootstrap.com/" target="_blank">GetBootstrap</a><br />      
+                    The GetBootstrap site contains documentations, examples of the bootstrap reference. It also has a link to the premade bootstrap themes. It gives you examples of the layout, framework and some custom component. Bootstrap was original release in August of 2011 and have now been updated to version 4.  </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li class="altlist"><p><a href="https://learn.jquery.com/" target="_blank">jQuery</a><br />
+                    The jQuery site is a learning site. It has sections you can read about to learn jQuery. It's goal is to provide user with references to all aspects of using jQuery. It has a contributing section where it shows user how to contribute to the site to help other developers because learning how and when to use jQuery is a different process for each and every web developer, depending largely on experience with the primary tools for front-end development.  </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li><p><a href="https://css-tricks.com/" target="_blank">CSS-Trick</a><br />
+                    CSS-Tricks is really about building websites and all that entails, mostly from a front-end perspective. It has an article/blog section where users can post an article and others can comment relating to CSS, HTML, and JavaScript. It has videos to teach you about front end development. </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li class="altlist"><p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">MDN Web Docs</a><br />
+                    The MDN web docs site contains a comprehensive reference of many web resources including html. This links talks about meta element. Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document. Many meta element contains a name and content attribute which specifies the name of the meta and describes the meta content. </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li class="altlist"><p><a href="https://www.tutorialspoint.com/jquery/dom-html.htm" target="_blank">TutorialsPoint</a><br />
+                    The TutorialsPoint site is a site created for those tht prefer to learn new skills at their own pace and in the comfort of their own home. Their missing is to deliver simple and easy learning. They has a large file sharing server so users can share files and they have library tutorial videos to learn about your subject.  </p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+                    
+                    <li class="altlist"><p><a href="http://www.lynda.com" target="_blank">Lynda</a><br />
+                    The Lynda site is an American massive open online course website offering video courses taught by industry experts in software, creative, and business skills. It was founded in 1995 by Lynda Weinman as lynda.com before being acquired by LinkedIn in 2015. In 2016 LinkedIn was acquired by Microsoft. Lynda is a paid site, but it is free if you have a public library card. If you want to get access you should use the link from the public library site and enter your library card.</p>
+                    <p class="rating">*Rating 5/5</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

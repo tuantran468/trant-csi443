@@ -1,15 +1,14 @@
 body{
     font-family: Palatino Linotype, Garamond, san-serif;
-   /*  color: #000000;
-    background: #000000;
-    background-image: url();
-    background-position: top left;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
     text-align: justify;
     display: hidden;
 }
 
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+font-size:      1.0em;
+}
 
 
 div img {
@@ -21,7 +20,7 @@ div img {
 }
 
 
-.altlist:nth-of-type(odd)  {
+div .row:nth-of-type(even)  {
     background-color: lightgrey;
 }
     
@@ -29,11 +28,6 @@ div img {
     display: hidden;
 }
 
-#profilepicture {
-    width:150px; 
-    height:150px;
-    padding: 15px;
-}
 
 a:link { color: #00c; background: transparent;}
 a:visited{ color: #609; background: transparent;}
@@ -42,10 +36,6 @@ a:hover { background: #ffa;}
 a {font-size: large}
 
  
-p.rating {
-    font-size: 12px;
-}
-
 p {
     font-size: 14px;
 }
@@ -74,21 +64,31 @@ body {
         background-color: black;
         color: white;}   
         
+        p { 
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+        }
+        
         a:link { color: white; background: transparent;}
         a:visited{ color: lightgray; background: transparent;}
         a:active { color: aqua; background: transparent;}
         a:hover { background: black;}
         a {font-size: large}
         
-        h1,h2,h3{ color: lightgray; }
+        
+        h1,h2,h3{ color: white; }
 }
     
 @media (min-width:770px ) and (max-width: 991px) {
     body {
-        background-color: lightgray;
+        background-color: #F0F8FF;
         color: black;
     }
 }
+
 @media (min-width:991px){
     body{
         background-color:white;
@@ -97,8 +97,4 @@ body {
         
 }
 
-.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
-.navbar .nav > li.current-menu-item > a, 
-.navbar .nav > li.current-menu-ancestor > a {
-font-size:      1.0em;
-}
+
