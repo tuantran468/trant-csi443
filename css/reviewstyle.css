@@ -10,15 +10,19 @@ body{
 font-size:      1.0em;
 }
 
-
-div img {
-    width: 419px;
-    height: 384px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
+img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 div .row:nth-of-type(even)  {
     background-color: lightgrey;
@@ -33,14 +37,21 @@ a:link { color: #00c; background: transparent;}
 a:visited{ color: #609; background: transparent;}
 a:active { color: #c00; background: transparent;}
 a:hover { background: #ffa;}
-a {font-size: large}
+a {
+    font-size: large;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
 
  
 p {
     font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-h1,h2,h3,h4,h5,h6 { text-align: left; }
+
 
 
 h1,h2,h3{ color: #005a9c; }
@@ -51,15 +62,8 @@ h4 { font: 100%; font-weight:bold; font-family:san-serif;}
 h5 { font: 100%; font-style:italic; font-family:san-serif;}
 h6 { font: 170%; font-variant:small-caps; font-family:san-serif;}
 
-.thumbnail {
-    padding: 0;
-    border: 0;
-    height:60%;
-    width:60%;
-}
 
-
-@media /*only screen and*/ (max-width: 769px) {
+@media /*only screen and*/ (max-width: 678px) {
 body {
         background-color: black;
         color: white;}   
